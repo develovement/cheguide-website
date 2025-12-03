@@ -1,0 +1,22 @@
+{
+  "name": "cheguide-website",
+  "version": "1.0.0",
+  "description": "PT Cheguide Wisata Air - Company Profile Website",
+  "main": "server.js",
+  "private": true,
+  "scripts": {
+    "dev": "nodemon server.js",
+    "start": "node server.js",
+    "build": "echo 'Build completed successfully'"
+  },
+  "keywords": ["rafting", "outbound", "outing", "bogor"],
+  "author": "Cheguide",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "ejs": "^3.1.9"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}

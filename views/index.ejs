@@ -1,0 +1,857 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="PT Cheguide Wisata Air - Provider rafting Cisadane, outing perusahaan, outbound, fun games, off-road, dan paintball di Bogor">
+  <title><%= title %></title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'cheguide-green': '#009E49',
+            'cheguide-blue': '#0072BC',
+            'cheguide-yellow': '#FFC300',
+            'cheguide-dark': '#1A1A1A',
+          },
+          fontFamily: {
+            'poppins': ['Poppins', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body class="font-poppins text-cheguide-dark">
+  <%- include('partials/navbar') %>
+
+  <main>
+    <section id="beranda" class="hero-section pt-20 pb-16 md:py-32 bg-gradient-to-br from-cheguide-green to-cheguide-blue relative overflow-hidden">
+      <div class="absolute inset-0 opacity-10 bg-hero-pattern"></div>
+      <div class="container mx-auto px-4 relative z-10">
+        <div class="grid md:grid-cols-2 gap-8 items-center">
+          <div class="text-white">
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 leading-tight">
+              Serunya Outing & Rafting di Bogor Bersama Cheguide
+            </h1>
+            <p class="text-xl md:text-2xl mb-6 opacity-90">
+              Provider resmi wisata outdoor, rafting Cisadane, dan outing perusahaan dengan standar keselamatan tinggi.
+            </p>
+            <ul class="space-y-3 mb-8 text-lg">
+              <li class="flex items-start">
+                <svg class="w-6 h-6 mr-2 mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                </svg>
+                Pemandu berlisensi & berpengalaman
+              </li>
+              <li class="flex items-start">
+                <svg class="w-6 h-6 mr-2 mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                </svg>
+                Cocok untuk perusahaan, sekolah, komunitas, dan keluarga
+              </li>
+              <li class="flex items-start">
+                <svg class="w-6 h-6 mr-2 mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                </svg>
+                Bisa custom konsep acara sesuai kebutuhan
+              </li>
+            </ul>
+            <div class="flex flex-col sm:flex-row gap-4">
+              <a href="https://wa.me/6285180773953?text=Halo%20Cheguide,%20saya%20ingin%20tanya%20paket%20rafting." target="_blank" class="bg-cheguide-yellow text-cheguide-dark px-8 py-4 rounded-full font-semibold text-lg hover:bg-yellow-400 transition shadow-lg text-center">
+                Konsultasi via WhatsApp
+              </a>
+              <a href="#paket" class="border-2 border-white text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-white hover:text-cheguide-green transition text-center">
+                Lihat Paket Rafting
+              </a>
+            </div>
+          </div>
+        <div>
+          <div class="hidden md:block"></div>
+            <div class="bg-white/10 backdrop-blur-sm rounded-3xl p-4 shadow-2xl md:w-[800px]">
+              <img 
+                  src="/img/hero-photo.png" 
+                  alt="Rafting Cisadane" 
+                   class="rounded-2xl w-full h-auto"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-16 bg-white">
+      <div class="container mx-auto px-4">
+        <div class="max-w-4xl mx-auto">
+          <h2 class="text-3xl md:text-4xl font-bold text-center mb-6 text-cheguide-green">
+            Tentang PT Cheguide Wisata Air
+          </h2>
+          <p class="text-lg text-gray-700 leading-relaxed mb-8 text-center">
+            PT Cheguide Wisata Air adalah perusahaan jasa wisata outdoor yang berlokasi di Bogor, Jawa Barat, dan berfokus pada penyelenggaraan kegiatan outing, rafting Cisadane, outbound, fun games, off-road adventure, paintball, serta paket menginap untuk perusahaan, lembaga, komunitas, dan keluarga. Cheguide berpengalaman menangani ratusan klien corporate dengan komitmen memberikan aktivitas outdoor yang aman, profesional, dan menyenangkan.
+          </p>
+          <div class="grid md:grid-cols-3 gap-6">
+            <div class="bg-gradient-to-br from-cheguide-green to-green-600 text-white p-6 rounded-xl text-center shadow-lg">
+              <svg class="w-12 h-12 mx-auto mb-3" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"></path>
+              </svg>
+              <h3 class="font-semibold text-lg">Berbasis di Bogor</h3>
+            </div>
+            <div class="bg-gradient-to-br from-cheguide-blue to-blue-600 text-white p-6 rounded-xl text-center shadow-lg">
+              <svg class="w-12 h-12 mx-auto mb-3" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3zM6 8a2 2 0 11-4 0 2 2 0 014 0zM16 18v-3a5.972 5.972 0 00-.75-2.906A3.005 3.005 0 0119 15v3h-3zM4.75 12.094A5.973 5.973 0 004 15v3H1v-3a3 3 0 013.75-2.906z"></path>
+              </svg>
+              <h3 class="font-semibold text-lg">Fokus Wisata Outdoor & Outing</h3>
+            </div>
+            <div class="bg-gradient-to-br from-cheguide-yellow to-yellow-500 text-cheguide-dark p-6 rounded-xl text-center shadow-lg">
+              <svg class="w-12 h-12 mx-auto mb-3" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M9 6a3 3 0 11-6 0 3 3 0 016 0zM17 6a3 3 0 11-6 0 3 3 0 016 0zM12.93 17c.046-.327.07-.66.07-1a6.97 6.97 0 00-1.5-4.33A5 5 0 0119 16v1h-6.07zM6 11a5 5 0 015 5v1H1v-1a5 5 0 015-5z"></path>
+              </svg>
+              <h3 class="font-semibold text-lg">Ratusan Klien Perusahaan</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-16 bg-gray-50">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-cheguide-green">
+          Visi & Misi
+        </h2>
+        <div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+          <div class="bg-white p-8 rounded-xl shadow-lg">
+            <div class="flex items-center mb-4">
+              <div class="w-12 h-12 bg-cheguide-green rounded-full flex items-center justify-center mr-4">
+                <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M10 12a2 2 0 100-4 2 2 0 000 4z"></path>
+                  <path fill-rule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clip-rule="evenodd"></path>
+                </svg>
+              </div>
+              <h3 class="text-2xl font-bold text-cheguide-green">Visi</h3>
+            </div>
+            <p class="text-gray-700 leading-relaxed">
+              Menjadi penyedia jasa wisata outdoor dan outing perusahaan paling terpercaya di Bogor dan Jabodetabek.
+            </p>
+          </div>
+          <div class="bg-white p-8 rounded-xl shadow-lg">
+            <div class="flex items-center mb-4">
+              <div class="w-12 h-12 bg-cheguide-blue rounded-full flex items-center justify-center mr-4">
+                <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd"></path>
+                </svg>
+              </div>
+              <h3 class="text-2xl font-bold text-cheguide-blue">Misi</h3>
+            </div>
+            <ul class="space-y-3 text-gray-700">
+              <li class="flex items-start">
+                <svg class="w-5 h-5 mr-2 mt-0.5 text-cheguide-blue flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                </svg>
+                Menyediakan layanan wisata outdoor dengan standar keselamatan tinggi.
+              </li>
+              <li class="flex items-start">
+                <svg class="w-5 h-5 mr-2 mt-0.5 text-cheguide-blue flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                </svg>
+                Menghadirkan program outing dan team building yang efektif, seru, dan berkesan.
+              </li>
+              <li class="flex items-start">
+                <svg class="w-5 h-5 mr-2 mt-0.5 text-cheguide-blue flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                </svg>
+                Memberikan pelayanan ramah, profesional, dan terencana.
+              </li>
+              <li class="flex items-start">
+                <svg class="w-5 h-5 mr-2 mt-0.5 text-cheguide-blue flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                </svg>
+                Mendukung pelestarian lingkungan melalui kegiatan wisata alam yang bertanggung jawab.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="layanan" class="py-16 bg-white">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-4 text-cheguide-green">
+          Layanan Utama
+        </h2>
+        <p class="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
+          Beragam pilihan aktivitas outdoor untuk kebutuhan outing perusahaan, gathering, dan petualangan keluarga
+        </p>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div class="bg-white border-2 border-gray-200 rounded-xl p-6 hover:border-cheguide-green hover:shadow-xl transition duration-300">
+            <div class="w-16 h-16 bg-cheguide-green/10 rounded-full flex items-center justify-center mb-4">
+              <svg class="w-8 h-8 text-cheguide-green" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M6 2a2 2 0 00-2 2v12a2 2 0 002 2h8a2 2 0 002-2V4a2 2 0 00-2-2H6zm1 2a1 1 0 000 2h6a1 1 0 100-2H7zm6 7a1 1 0 011 1v3a1 1 0 11-2 0v-3a1 1 0 011-1zm-3 3a1 1 0 100 2h.01a1 1 0 100-2H10zm-4 1a1 1 0 011-1h.01a1 1 0 110 2H7a1 1 0 01-1-1zm1-4a1 1 0 100 2h.01a1 1 0 100-2H7zm2 1a1 1 0 011-1h.01a1 1 0 110 2H10a1 1 0 01-1-1zm4-4a1 1 0 100 2h.01a1 1 0 100-2H13zM9 9a1 1 0 011-1h.01a1 1 0 110 2H10a1 1 0 01-1-1zM7 8a1 1 0 000 2h.01a1 1 0 000-2H7z" clip-rule="evenodd"></path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold mb-2 text-cheguide-dark">Rafting Sungai Cisadane - Bogor</h3>
+            <p class="text-gray-600 mb-4">
+              Arung jeram aman untuk pemula hingga menantang bagi pencari adrenalin. Sudah termasuk peralatan lengkap, pemandu profesional, dan briefing keselamatan.
+            </p>
+            <a href="https://wa.me/6285180773953?text=Halo%20Cheguide,%20saya%20ingin%20tanya%20paket%20rafting." target="_blank" class="text-cheguide-green font-semibold hover:underline">
+              Lihat Detail →
+            </a>
+          </div>
+
+          <div class="bg-white border-2 border-gray-200 rounded-xl p-6 hover:border-cheguide-green hover:shadow-xl transition duration-300">
+            <div class="w-16 h-16 bg-cheguide-blue/10 rounded-full flex items-center justify-center mb-4">
+              <svg class="w-8 h-8 text-cheguide-blue" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3zM6 8a2 2 0 11-4 0 2 2 0 014 0zM16 18v-3a5.972 5.972 0 00-.75-2.906A3.005 3.005 0 0119 15v3h-3zM4.75 12.094A5.973 5.973 0 004 15v3H1v-3a3 3 0 013.75-2.906z"></path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold mb-2 text-cheguide-dark">Outbound & Fun Games</h3>
+            <p class="text-gray-600 mb-4">
+              Program team building untuk perusahaan, sekolah, dan komunitas: ice breaking, team work challenge, fun competition, hingga leadership games.
+            </p>
+            <a href="https://wa.me/6285180773953?text=Halo%20Cheguide,%20saya%20ingin%20tanya%20paket%20outbound." target="_blank" class="text-cheguide-green font-semibold hover:underline">
+              Lihat Detail →
+            </a>
+          </div>
+
+          <div class="bg-white border-2 border-gray-200 rounded-xl p-6 hover:border-cheguide-green hover:shadow-xl transition duration-300">
+            <div class="w-16 h-16 bg-cheguide-yellow/20 rounded-full flex items-center justify-center mb-4">
+              <svg class="w-8 h-8 text-yellow-600" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM4.332 8.027a6.012 6.012 0 011.912-2.706C6.512 5.73 6.974 6 7.5 6A1.5 1.5 0 019 7.5V8a2 2 0 004 0 2 2 0 011.523-1.943A5.977 5.977 0 0116 10c0 .34-.028.675-.083 1H15a2 2 0 00-2 2v2.197A5.973 5.973 0 0110 16v-2a2 2 0 00-2-2 2 2 0 01-2-2 2 2 0 00-1.668-1.973z" clip-rule="evenodd"></path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold mb-2 text-cheguide-dark">Off Road Adventure</h3>
+            <p class="text-gray-600 mb-4">
+              Menjelajahi jalur off-road dengan kendaraan 4x4 di area Caringin - Bogor. Cocok untuk gathering dan acara komunitas.
+            </p>
+            <a href="https://wa.me/6285180773953?text=Halo%20Cheguide,%20saya%20ingin%20tanya%20paket%20off-road." target="_blank" class="text-cheguide-green font-semibold hover:underline">
+              Lihat Detail →
+            </a>
+          </div>
+
+          <div class="bg-white border-2 border-gray-200 rounded-xl p-6 hover:border-cheguide-green hover:shadow-xl transition duration-300">
+            <div class="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mb-4">
+              <svg class="w-8 h-8 text-red-600" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z" clip-rule="evenodd"></path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold mb-2 text-cheguide-dark">Paintball</h3>
+            <p class="text-gray-600 mb-4">
+              Paket paintball lengkap dengan peralatan, pelindung, arena, dan marshal profesional.
+            </p>
+            <a href="https://wa.me/6285180773953?text=Halo%20Cheguide,%20saya%20ingin%20tanya%20paket%20paintball." target="_blank" class="text-cheguide-green font-semibold hover:underline">
+              Lihat Detail →
+            </a>
+          </div>
+
+          <div class="bg-white border-2 border-gray-200 rounded-xl p-6 hover:border-cheguide-green hover:shadow-xl transition duration-300">
+            <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mb-4">
+              <svg class="w-8 h-8 text-purple-600" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"></path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold mb-2 text-cheguide-dark">Paket Menginap / Villa / Resort</h3>
+            <p class="text-gray-600 mb-4">
+              Rekomendasi villa & resort terbaik di Bogor untuk outing 2D1N / 3D2N, termasuk makan, api unggun (opsional), fun games, dan dokumentasi.
+            </p>
+            <a href="https://wa.me/6285180773953?text=Halo%20Cheguide,%20saya%20ingin%20tanya%20paket%20menginap." target="_blank" class="text-cheguide-green font-semibold hover:underline">
+              Lihat Detail →
+            </a>
+          </div>
+
+          <div class="bg-white border-2 border-gray-200 rounded-xl p-6 hover:border-cheguide-green hover:shadow-xl transition duration-300">
+            <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mb-4">
+              <svg class="w-8 h-8 text-orange-600" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd"></path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold mb-2 text-cheguide-dark">Event Organizer Outdoor (EO)</h3>
+            <p class="text-gray-600 mb-4">
+              Menangani konsep acara: company gathering, family day, ulang tahun komunitas, hingga custom event.
+            </p>
+            <a href="https://wa.me/6285180773953?text=Halo%20Cheguide,%20saya%20ingin%20tanya%20jasa%20EO." target="_blank" class="text-cheguide-green font-semibold hover:underline">
+              Lihat Detail →
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="paket" class="py-16 bg-gray-50">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-4 text-cheguide-green">
+          Paket Rafting & Outing
+        </h2>
+        <p class="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
+          Pilihan paket yang bisa disesuaikan dengan kebutuhan dan budget Anda
+        </p>
+        <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+          <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition duration-300">
+            <div class="bg-gradient-to-r from-cheguide-green to-green-600 text-white p-6 text-center">
+              <h3 class="text-2xl font-bold mb-2">Rafting Standard</h3>
+              <p class="text-sm opacity-90">Cocok untuk Team Kecil & Keluarga</p>
+            </div>
+            <div class="p-6">
+              <div class="mb-6">
+                <p class="text-gray-700 mb-4">Paket termasuk:</p>
+                <ul class="space-y-2 text-gray-600">
+                  <li class="flex items-start">
+                    <svg class="w-5 h-5 mr-2 mt-0.5 text-cheguide-green flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                      <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                    </svg>
+                    Peralatan rafting lengkap
+                  </li>
+                  <li class="flex items-start">
+                    <svg class="w-5 h-5 mr-2 mt-0.5 text-cheguide-green flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                      <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                    </svg>
+                    Pemandu profesional berlisensi
+                  </li>
+                  <li class="flex items-start">
+                    <svg class="w-5 h-5 mr-2 mt-0.5 text-cheguide-green flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                      <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                    </svg>
+                    Transport lokal (opsional)
+                  </li>
+                  <li class="flex items-start">
+                    <svg class="w-5 h-5 mr-2 mt-0.5 text-cheguide-green flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                      <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                    </svg>
+                    Briefing keselamatan
+                  </li>
+                </ul>
+              </div>
+              <a href="https://wa.me/6285180773953?text=Halo%20Cheguide,%20saya%20ingin%20tanya%20detail%20Paket%20Rafting%20Standard." target="_blank" class="block w-full bg-cheguide-green text-white text-center py-3 rounded-lg font-semibold hover:bg-green-600 transition">
+                Tanya Detail
+              </a>
+            </div>
+          </div>
+
+          <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition duration-300 border-4 border-cheguide-yellow relative">
+            <div class="absolute top-0 right-0 bg-cheguide-yellow text-cheguide-dark px-4 py-1 text-sm font-bold rounded-bl-lg">
+              POPULER
+            </div>
+            <div class="bg-gradient-to-r from-cheguide-blue to-blue-600 text-white p-6 text-center">
+              <h3 class="text-2xl font-bold mb-2">Rafting Premium</h3>
+              <p class="text-sm opacity-90">Lengkap dengan Dokumentasi</p>
+            </div>
+            <div class="p-6">
+              <div class="mb-6">
+                <p class="text-gray-700 mb-4">Semua di Standard, plus:</p>
+                <ul class="space-y-2 text-gray-600">
+                  <li class="flex items-start">
+                    <svg class="w-5 h-5 mr-2 mt-0.5 text-cheguide-blue flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                      <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                    </svg>
+                    Makan siang / snack
+                  </li>
+                  <li class="flex items-start">
+                    <svg class="w-5 h-5 mr-2 mt-0.5 text-cheguide-blue flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                      <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                    </svg>
+                    Dokumentasi foto profesional
+                  </li>
+                  <li class="flex items-start">
+                    <svg class="w-5 h-5 mr-2 mt-0.5 text-cheguide-blue flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                      <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                    </svg>
+                    Sertifikat peserta
+                  </li>
+                  <li class="flex items-start">
+                    <svg class="w-5 h-5 mr-2 mt-0.5 text-cheguide-blue flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                      <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                    </svg>
+                    Welcome drink
+                  </li>
+                </ul>
+              </div>
+              <a href="https://wa.me/6285180773953?text=Halo%20Cheguide,%20saya%20ingin%20booking%20Paket%20Rafting%20Premium." target="_blank" class="block w-full bg-cheguide-yellow text-cheguide-dark text-center py-3 rounded-lg font-semibold hover:bg-yellow-400 transition">
+                Booking Paket Premium
+              </a>
+            </div>
+          </div>
+
+          <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition duration-300">
+            <div class="bg-gradient-to-r from-orange-500 to-red-600 text-white p-6 text-center">
+              <h3 class="text-2xl font-bold mb-2">Outing Corporate 2D1N</h3>
+              <p class="text-sm opacity-90">All-Inclusive Package</p>
+            </div>
+            <div class="p-6">
+              <div class="mb-6">
+                <p class="text-gray-700 mb-4">Paket termasuk:</p>
+                <ul class="space-y-2 text-gray-600">
+                  <li class="flex items-start">
+                    <svg class="w-5 h-5 mr-2 mt-0.5 text-orange-600 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                      <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                    </svg>
+                    Rafting + fun games
+                  </li>
+                  <li class="flex items-start">
+                    <svg class="w-5 h-5 mr-2 mt-0.5 text-orange-600 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                      <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                    </svg>
+                    Menginap 1 malam villa/resort
+                  </li>
+                  <li class="flex items-start">
+                    <svg class="w-5 h-5 mr-2 mt-0.5 text-orange-600 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                      <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                    </svg>
+                    Konsumsi lengkap (5x makan)
+                  </li>
+                  <li class="flex items-start">
+                    <svg class="w-5 h-5 mr-2 mt-0.5 text-orange-600 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                      <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                    </svg>
+                    Api unggun & sound system
+                  </li>
+                </ul>
+              </div>
+              <a href="https://wa.me/6285180773953?text=Halo%20Cheguide,%20saya%20ingin%20konsultasi%20Paket%20Outing%20Corporate%202D1N." target="_blank" class="block w-full bg-orange-600 text-white text-center py-3 rounded-lg font-semibold hover:bg-orange-700 transition">
+                Konsultasi Program
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="keunggulan" class="py-16 bg-white">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-4 text-cheguide-green">
+          Keunggulan Cheguide
+        </h2>
+        <p class="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
+          Mengapa ribuan klien mempercayai Cheguide untuk kegiatan outdoor mereka
+        </p>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+          <div class="flex items-start space-x-4 p-6 bg-gray-50 rounded-lg hover:bg-cheguide-green/5 transition">
+            <div class="w-12 h-12 bg-cheguide-green rounded-full flex items-center justify-center flex-shrink-0">
+              <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+              </svg>
+            </div>
+            <div>
+              <h3 class="font-bold text-lg mb-1 text-cheguide-dark">Pemandu & Fasilitator Berlisensi</h3>
+              <p class="text-gray-600 text-sm">Tim profesional dengan sertifikasi nasional dan pengalaman lapangan</p>
+            </div>
+          </div>
+
+          <div class="flex items-start space-x-4 p-6 bg-gray-50 rounded-lg hover:bg-cheguide-green/5 transition">
+            <div class="w-12 h-12 bg-cheguide-blue rounded-full flex items-center justify-center flex-shrink-0">
+              <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+              </svg>
+            </div>
+            <div>
+              <h3 class="font-bold text-lg mb-1 text-cheguide-dark">Peralatan Standar Keamanan Nasional</h3>
+              <p class="text-gray-600 text-sm">Semua equipment terawat dan memenuhi standar SNI</p>
+            </div>
+          </div>
+
+          <div class="flex items-start space-x-4 p-6 bg-gray-50 rounded-lg hover:bg-cheguide-green/5 transition">
+            <div class="w-12 h-12 bg-cheguide-yellow rounded-full flex items-center justify-center flex-shrink-0">
+              <svg class="w-6 h-6 text-cheguide-dark" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M8.433 7.418c.155-.103.346-.196.567-.267v1.698a2.305 2.305 0 01-.567-.267C8.07 8.34 8 8.114 8 8c0-.114.07-.34.433-.582zM11 12.849v-1.698c.22.071.412.164.567.267.364.243.433.468.433.582 0 .114-.07.34-.433.582a2.305 2.305 0 01-.567.267z"></path>
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-13a1 1 0 10-2 0v.092a4.535 4.535 0 00-1.676.662C6.602 6.234 6 7.009 6 8c0 .99.602 1.765 1.324 2.246.48.32 1.054.545 1.676.662v1.941c-.391-.127-.68-.317-.843-.504a1 1 0 10-1.51 1.31c.562.649 1.413 1.076 2.353 1.253V15a1 1 0 102 0v-.092a4.535 4.535 0 001.676-.662C13.398 13.766 14 12.991 14 12c0-.99-.602-1.765-1.324-2.246A4.535 4.535 0 0011 9.092V7.151c.391.127.68.317.843.504a1 1 0 101.511-1.31c-.563-.649-1.413-1.076-2.354-1.253V5z" clip-rule="evenodd"></path>
+              </svg>
+            </div>
+            <div>
+              <h3 class="font-bold text-lg mb-1 text-cheguide-dark">Harga Kompetitif Kualitas Premium</h3>
+              <p class="text-gray-600 text-sm">Value terbaik dengan kualitas yang tidak dikompromikan</p>
+            </div>
+          </div>
+
+          <div class="flex items-start space-x-4 p-6 bg-gray-50 rounded-lg hover:bg-cheguide-green/5 transition">
+            <div class="w-12 h-12 bg-green-600 rounded-full flex items-center justify-center flex-shrink-0">
+              <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M9 6a3 3 0 11-6 0 3 3 0 016 0zM17 6a3 3 0 11-6 0 3 3 0 016 0zM12.93 17c.046-.327.07-.66.07-1a6.97 6.97 0 00-1.5-4.33A5 5 0 0119 16v1h-6.07zM6 11a5 5 0 015 5v1H1v-1a5 5 0 015-5z"></path>
+              </svg>
+            </div>
+            <div>
+              <h3 class="font-bold text-lg mb-1 text-cheguide-dark">Dipercaya Perusahaan Besar</h3>
+              <p class="text-gray-600 text-sm">Ratusan klien corporate, BUMN, sekolah, dan komunitas</p>
+            </div>
+          </div>
+
+          <div class="flex items-start space-x-4 p-6 bg-gray-50 rounded-lg hover:bg-cheguide-green/5 transition">
+            <div class="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center flex-shrink-0">
+              <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M11.49 3.17c-.38-1.56-2.6-1.56-2.98 0a1.532 1.532 0 01-2.286.948c-1.372-.836-2.942.734-2.106 2.106.54.886.061 2.042-.947 2.287-1.561.379-1.561 2.6 0 2.978a1.532 1.532 0 01.947 2.287c-.836 1.372.734 2.942 2.106 2.106a1.532 1.532 0 012.287.947c.379 1.561 2.6 1.561 2.978 0a1.533 1.533 0 012.287-.947c1.372.836 2.942-.734 2.106-2.106a1.533 1.533 0 01.947-2.287c1.561-.379 1.561-2.6 0-2.978a1.532 1.532 0 01-.947-2.287c.836-1.372-.734-2.942-2.106-2.106a1.532 1.532 0 01-2.287-.947zM10 13a3 3 0 100-6 3 3 0 000 6z" clip-rule="evenodd"></path>
+              </svg>
+            </div>
+            <div>
+              <h3 class="font-bold text-lg mb-1 text-cheguide-dark">Bisa Custom Acara</h3>
+              <p class="text-gray-600 text-sm">Fleksibel sesuai kebutuhan dan tema acara Anda</p>
+            </div>
+          </div>
+
+          <div class="flex items-start space-x-4 p-6 bg-gray-50 rounded-lg hover:bg-cheguide-green/5 transition">
+            <div class="w-12 h-12 bg-purple-600 rounded-full flex items-center justify-center flex-shrink-0">
+              <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd"></path>
+              </svg>
+            </div>
+            <div>
+              <h3 class="font-bold text-lg mb-1 text-cheguide-dark">Tim Muda, Friendly & Responsif</h3>
+              <p class="text-gray-600 text-sm">Komunikasi mudah, respons cepat, pelayanan ramah</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-16 bg-blue-50">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-4 text-cheguide-green">
+          Legalitas Perusahaan
+        </h2>
+        <p class="text-center text-gray-600 mb-8">
+          PT Cheguide Wisata Air adalah badan usaha resmi dan terpercaya
+        </p>
+        <div class="max-w-4xl mx-auto bg-white rounded-xl shadow-lg p-8">
+          <div class="grid md:grid-cols-2 gap-6 mb-6">
+            <div class="flex items-start">
+              <svg class="w-6 h-6 text-cheguide-green mr-3 mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+              </svg>
+              <p class="text-gray-700"><strong>Badan usaha:</strong> Perseroan Terbatas (PT)</p>
+            </div>
+            <div class="flex items-start">
+              <svg class="w-6 h-6 text-cheguide-green mr-3 mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+              </svg>
+              <p class="text-gray-700"><strong>NIB / SIUP / TDP:</strong> tersedia</p>
+            </div>
+            <div class="flex items-start">
+              <svg class="w-6 h-6 text-cheguide-green mr-3 mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+              </svg>
+              <p class="text-gray-700"><strong>NPWP perusahaan:</strong> tersedia untuk kebutuhan invoice</p>
+            </div>
+            <div class="flex items-start">
+              <svg class="w-6 h-6 text-cheguide-green mr-3 mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+              </svg>
+              <p class="text-gray-700"><strong>Izin operasional:</strong> terdaftar sebagai penyelenggara wisata outdoor</p>
+            </div>
+            <div class="flex items-start">
+              <svg class="w-6 h-6 text-cheguide-green mr-3 mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+              </svg>
+              <p class="text-gray-700"><strong>Asuransi peserta:</strong> opsional sesuai paket</p>
+            </div>
+          </div>
+          <div class="bg-cheguide-green/10 border-l-4 border-cheguide-green p-4 rounded">
+            <p class="text-gray-700 font-semibold">
+              📄 Dokumen legalitas lengkap dapat dikirimkan untuk kebutuhan tender dan pengadaan.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="portofolio" class="py-16 bg-white">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-4 text-cheguide-green">
+          Klien & Portofolio
+        </h2>
+        <p class="text-center text-gray-600 mb-8 max-w-2xl mx-auto">
+          Cheguide telah dipercaya oleh banyak perusahaan swasta, BUMN, lembaga pemerintah, sekolah, universitas, komunitas, hingga keluarga.
+        </p>
+
+      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 mb-12">
+         <div class="bg-gray-100 rounded-lg p-6 flex items-center justify-center h-32 hover:shadow-lg transition">
+            <img
+             src="data:image/jpeg;base64,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"
+             alt="Nama Klien 1"
+             class="max-h-12 md:max-h-16 w-auto object-contain"
+             loading="lazy"
+           />
+         </div>
+
+         <div class="bg-gray-100 rounded-lg p-6 flex items-center justify-center h-32 hover:shadow-lg transition">
+           <img
+            src="data:image/jpeg;base64,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"
+            alt="Nama Klien 2"
+            class="max-h-12 md:max-h-16 w-auto object-contain"
+            loading="lazy"
+           />
+         </div>
+
+         <div class="bg-gray-100 rounded-lg p-6 flex items-center justify-center h-32 hover:shadow-lg transition">
+           <img
+           src="data:image/png;base64,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"
+           alt="Nama Klien 3"
+           class="max-h-12 md:max-h-16 w-auto object-contain"
+           loading="lazy"
+           />
+         </div>
+
+         <div class="bg-gray-100 rounded-lg p-6 flex items-center justify-center h-32 hover:shadow-lg transition">
+           <img
+           src="data:image/png;base64,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"
+           alt="Nama Klien 4"
+           class="max-h-12 md:max-h-16 w-auto object-contain"
+           loading="lazy"
+           />
+         </div>
+
+         <div class="bg-gray-100 rounded-lg p-6 flex items-center justify-center h-32 hover:shadow-lg transition">
+           <img
+           src="https://link-logo-client-5.png"
+           alt="Nama Klien 5"
+           class="max-h-12 md:max-h-16 w-auto object-contain"
+           loading="lazy"
+           />
+         </div>
+
+         <div class="bg-gray-100 rounded-lg p-6 flex items-center justify-center h-32 hover:shadow-lg transition">
+           <img
+           src="https://link-logo-client-6.png"
+           alt="Nama Klien 6"
+           class="max-h-12 md:max-h-16 w-auto object-contain"
+           loading="lazy"
+           />
+         </div>
+      </div>
+
+        <div class="max-w-5xl mx-auto">
+          <h3 class="text-2xl font-bold text-center mb-8 text-cheguide-dark">Testimoni Klien</h3>
+          <div class="grid md:grid-cols-3 gap-6">
+            <div class="bg-gray-50 p-6 rounded-xl shadow-md">
+              <div class="flex items-center mb-4">
+                <div class="w-12 h-12 bg-cheguide-green rounded-full flex items-center justify-center text-white font-bold mr-3">
+                  AS
+                </div>
+                <div>
+                  <p class="font-bold text-cheguide-dark">Ahmad Subarkah</p>
+                  <p class="text-sm text-gray-600">HR Manager - PT XYZ</p>
+                </div>
+              </div>
+              <p class="text-gray-700 italic">
+                "Acara outing perusahaan kami berjalan sangat seru dan aman. Tim Cheguide sangat profesional dan responsif. Highly recommended!"
+              </p>
+            </div>
+
+            <div class="bg-gray-50 p-6 rounded-xl shadow-md">
+              <div class="flex items-center mb-4">
+                <div class="w-12 h-12 bg-cheguide-blue rounded-full flex items-center justify-center text-white font-bold mr-3">
+                  RW
+                </div>
+                <div>
+                  <p class="font-bold text-cheguide-dark">Rina Wulandari</p>
+                  <p class="text-sm text-gray-600">Ketua Komunitas</p>
+                </div>
+              </div>
+              <p class="text-gray-700 italic">
+                "Rafting di Cisadane bersama Cheguide pengalaman yang tak terlupakan. Pemandu ramah dan sangat perhatian dengan keselamatan peserta."
+              </p>
+            </div>
+
+            <div class="bg-gray-50 p-6 rounded-xl shadow-md">
+              <div class="flex items-center mb-4">
+                <div class="w-12 h-12 bg-cheguide-yellow rounded-full flex items-center justify-center text-cheguide-dark font-bold mr-3">
+                  BP
+                </div>
+                <div>
+                  <p class="font-bold text-cheguide-dark">Budi Prasetyo</p>
+                  <p class="text-sm text-gray-600">Kepala Sekolah</p>
+                </div>
+              </div>
+              <p class="text-gray-700 italic">
+                "Program outbound untuk siswa kami sangat edukatif dan menyenangkan. Cheguide berhasil membuat kegiatan yang berkesan untuk anak-anak."
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq" class="py-16 bg-gray-50">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-4 text-cheguide-green">
+          FAQ - Pertanyaan Umum
+        </h2>
+        <p class="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
+          Jawaban untuk pertanyaan yang sering diajukan seputar layanan Cheguide
+        </p>
+        <div class="max-w-3xl mx-auto space-y-4">
+          <div class="faq-item bg-white rounded-lg shadow-md overflow-hidden">
+            <button class="faq-question w-full text-left p-6 flex justify-between items-center hover:bg-gray-50 transition">
+              <span class="font-semibold text-lg text-cheguide-dark">Apakah rafting aman untuk pemula?</span>
+              <svg class="w-6 h-6 text-cheguide-green transform transition-transform faq-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </button>
+            <div class="faq-answer hidden px-6 pb-6">
+              <p class="text-gray-700">
+                Ya, sangat aman! Kami menyediakan pemandu berlisensi, peralatan standar SNI, dan briefing keselamatan lengkap sebelum kegiatan. Rute rafting kami juga disesuaikan dengan tingkat kemampuan peserta, mulai dari pemula hingga advanced.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item bg-white rounded-lg shadow-md overflow-hidden">
+            <button class="faq-question w-full text-left p-6 flex justify-between items-center hover:bg-gray-50 transition">
+              <span class="font-semibold text-lg text-cheguide-dark">Berapa minimal jumlah peserta?</span>
+              <svg class="w-6 h-6 text-cheguide-green transform transition-transform faq-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </button>
+            <div class="faq-answer hidden px-6 pb-6">
+              <p class="text-gray-700">
+                Minimal peserta tergantung paket yang dipilih. Untuk rafting, minimal 4-6 orang per perahu. Untuk paket outing perusahaan, minimal biasanya 20-30 peserta. Namun, kami fleksibel dan bisa berdiskusi untuk jumlah peserta yang lebih sedikit atau lebih banyak.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item bg-white rounded-lg shadow-md overflow-hidden">
+            <button class="faq-question w-full text-left p-6 flex justify-between items-center hover:bg-gray-50 transition">
+              <span class="font-semibold text-lg text-cheguide-dark">Apakah tersedia dokumentasi foto dan video?</span>
+              <svg class="w-6 h-6 text-cheguide-green transform transition-transform faq-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </button>
+            <div class="faq-answer hidden px-6 pb-6">
+              <p class="text-gray-700">
+                Ya! Dokumentasi foto dan video tersedia sebagai add-on atau sudah termasuk dalam paket premium. Tim fotografer kami akan mengabadikan momen-momen terbaik selama kegiatan dan file akan dikirimkan dalam bentuk softcopy.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item bg-white rounded-lg shadow-md overflow-hidden">
+            <button class="faq-question w-full text-left p-6 flex justify-between items-center hover:bg-gray-50 transition">
+              <span class="font-semibold text-lg text-cheguide-dark">Bisakah paket disesuaikan dengan kebutuhan perusahaan?</span>
+              <svg class="w-6 h-6 text-cheguide-green transform transition-transform faq-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </button>
+            <div class="faq-answer hidden px-6 pb-6">
+              <p class="text-gray-700">
+                Tentu saja! Kami sangat terbuka untuk custom paket sesuai kebutuhan, tema, dan budget perusahaan Anda. Dari pemilihan aktivitas, durasi, hingga konsep acara bisa disesuaikan. Silakan konsultasi dengan tim kami via WhatsApp.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item bg-white rounded-lg shadow-md overflow-hidden">
+            <button class="faq-question w-full text-left p-6 flex justify-between items-center hover:bg-gray-50 transition">
+              <span class="font-semibold text-lg text-cheguide-dark">Bagaimana jika cuaca hujan?</span>
+              <svg class="w-6 h-6 text-cheguide-green transform transition-transform faq-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </button>
+            <div class="faq-answer hidden px-6 pb-6">
+              <p class="text-gray-700">
+                Kegiatan outdoor seperti rafting justru semakin seru saat hujan ringan! Namun, jika terjadi cuaca ekstrem atau kondisi tidak aman, kami akan mengusulkan penundaan atau aktivitas alternatif indoor yang tetap menyenangkan. Keselamatan peserta adalah prioritas utama kami.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="kontak" class="py-16 bg-white">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-4 text-cheguide-green">
+          Lokasi & Kontak
+        </h2>
+        <p class="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
+          Hubungi kami untuk konsultasi dan booking paket rafting & outing
+        </p>
+        <div class="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+          <div>
+            <div class="bg-gray-50 p-8 rounded-xl shadow-lg mb-6">
+              <h3 class="text-2xl font-bold mb-6 text-cheguide-dark">PT Cheguide Wisata Air</h3>
+              <div class="space-y-4">
+                <div class="flex items-start">
+                  <svg class="w-6 h-6 text-cheguide-green mr-3 mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"></path>
+                  </svg>
+                  <div>
+                    <p class="font-semibold text-cheguide-dark">Alamat</p>
+                    <p class="text-gray-700">Muarajaya, Kecamatan Caringin, Kabupaten Bogor, Jawa Barat</p>
+                  </div>
+                </div>
+
+                <div class="flex items-start">
+                  <svg class="w-6 h-6 text-cheguide-green mr-3 mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path>
+                  </svg>
+                  <div>
+                    <p class="font-semibold text-cheguide-dark">WhatsApp</p>
+                    <p class="text-gray-700">+62 851-8077-3953</p>
+                  </div>
+                </div>
+
+                <div class="flex items-start">
+                  <svg class="w-6 h-6 text-cheguide-green mr-3 mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path>
+                    <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path>
+                  </svg>
+                  <div>
+                    <p class="font-semibold text-cheguide-dark">Email</p>
+                    <p class="text-gray-700">cheguidewisataair@gmail.com</p>
+                  </div>
+                </div>
+
+                <div class="flex items-start">
+                  <svg class="w-6 h-6 text-cheguide-green mr-3 mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clip-rule="evenodd"></path>
+                  </svg>
+                  <div>
+                    <p class="font-semibold text-cheguide-dark">Social Media</p>
+                    <p class="text-gray-700">Instagram: @rafting_bogor_cheguide</p>
+                    <p class="text-gray-700">TikTok: @cheguidewisataair</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="flex flex-col sm:flex-row gap-4">
+              <a href="https://wa.me/6285180773953?text=Halo%20Cheguide,%20saya%20ingin%20tanya%20paket%20rafting." target="_blank" class="flex-1 bg-cheguide-green text-white text-center py-4 rounded-lg font-semibold hover:bg-green-600 transition shadow-lg">
+                Buka WhatsApp
+              </a>
+              <a href="https://maps.app.goo.gl/hNM3fLnmMNVSbuhg9?g_st=awb" target="_blank" class="flex-1 bg-cheguide-blue text-white text-center py-4 rounded-lg font-semibold hover:bg-blue-700 transition shadow-lg">
+                Lihat Lokasi di Maps
+              </a>
+            </div>
+          </div>
+
+          <div>
+            <div class="bg-gray-200 rounded-xl overflow-hidden shadow-lg h-full min-h-[400px] flex items-center justify-center">
+              <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3962.4131186350955!2d106.8141536!3d-6.719337800000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69cdc80317ec75%3A0xa51fb1c5400e1aa5!2sRAFTING%7COUTBOND%7CPAINTBALL%20CHEGUIDE!5e0!3m2!1sid!2sid!4v1764686650304!5m2!1sid!2sid"
+                width="100%" 
+                height="100%" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+             </iframe>
+           </div>
+        </div>
+    </section>
+
+    <section class="py-12 bg-gradient-to-r from-cheguide-green to-cheguide-blue">
+      <div class="container mx-auto px-4 text-center">
+        <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">
+          Siap Petualangan Seru Bersama Cheguide?
+        </h2>
+        <p class="text-xl text-white/90 mb-8">
+          Hubungi kami sekarang untuk konsultasi dan penawaran terbaik
+        </p>
+        <a href="https://wa.me/6285180773953?text=Halo%20Cheguide,%20saya%20ingin%20tanya%20paket%20rafting." target="_blank" class="inline-block bg-cheguide-yellow text-cheguide-dark px-10 py-4 rounded-full font-bold text-lg hover:bg-yellow-400 transition shadow-2xl">
+          Chat via WhatsApp Sekarang
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <%- include('partials/footer') %>
+
+  <script src="/js/main.js"></script>
+</body>
+</html>
