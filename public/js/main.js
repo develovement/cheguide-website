@@ -69,3 +69,92 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 });
+
+// ================= HERO SLIDER =================
+document.addEventListener("DOMContentLoaded", function () {
+  const slides = document.querySelectorAll(".hero-slide");
+  const prevBtn = document.getElementById("hero-prev");
+  const nextBtn = document.getElementById("hero-next");
+  const dotsContainer = document.getElementById("hero-dots");
+
+  if (!slides.length || !dotsContainer) return;
+
+  let current = 0;
+  let autoPlayInterval = null;
+
+  // bikin dots
+  slides.forEach((_, index) => {
+    const dot = document.createElement("button");
+    dot.className =
+      "hero-dot w-2.5 h-2.5 rounded-full bg-white/40 hover:bg-white transition";
+    dot.setAttribute("data-index", index);
+    dotsContainer.appendChild(dot);
+  });
+
+  const dots = dotsContainer.querySelectorAll(".hero-dot");
+
+  function showSlide(index) {
+    slides.forEach((slide, i) => {
+      if (i === index) {
+        slide.classList.remove("hidden");
+        slide.classList.add("block");
+      } else {
+        slide.classList.remove("block");
+        slide.classList.add("hidden");
+      }
+    });
+
+    dots.forEach((dot, i) => {
+      dot.classList.toggle("bg-white", i === index);
+      dot.classList.toggle("bg-white/40", i !== index);
+    });
+
+    current = index;
+  }
+
+  function nextSlide() {
+    const next = (current + 1) % slides.length;
+    showSlide(next);
+  }
+
+  function prevSlide() {
+    const prev = (current - 1 + slides.length) % slides.length;
+    showSlide(prev);
+  }
+
+  // event tombol
+  if (prevBtn && nextBtn) {
+    prevBtn.addEventListener("click", () => {
+      prevSlide();
+      restartAutoPlay();
+    });
+
+    nextBtn.addEventListener("click", () => {
+      nextSlide();
+      restartAutoPlay();
+    });
+  }
+
+  // event dots
+  dots.forEach((dot) => {
+    dot.addEventListener("click", () => {
+      const index = parseInt(dot.getAttribute("data-index"), 10);
+      showSlide(index);
+      restartAutoPlay();
+    });
+  });
+
+  // auto-play
+  function startAutoPlay() {
+    autoPlayInterval = setInterval(nextSlide, 6000); // 6 detik
+  }
+
+  function restartAutoPlay() {
+    clearInterval(autoPlayInterval);
+    startAutoPlay();
+  }
+
+  // inisialisasi
+  showSlide(0);
+  startAutoPlay();
+});

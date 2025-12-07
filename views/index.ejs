@@ -37,7 +37,7 @@
         <div class="grid md:grid-cols-2 gap-8 items-center">
           <div class="text-white">
             <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 leading-tight">
-              Serunya Outing & Rafting di Bogor Bersama Cheguide
+               Percayakan Kegiatan Outing/Event Anda Pada Cheguiede
             </h1>
             <p class="text-xl md:text-2xl mb-6 opacity-90">
               Provider resmi wisata outdoor, rafting Cisadane, dan outing perusahaan dengan standar keselamatan tinggi.
@@ -47,7 +47,7 @@
                 <svg class="w-6 h-6 mr-2 mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                   <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
                 </svg>
-                Pemandu berlisensi & berpengalaman
+                Event Organizer dengan tim yang sudah berpengalaman
               </li>
               <li class="flex items-start">
                 <svg class="w-6 h-6 mr-2 mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
@@ -63,7 +63,7 @@
               </li>
             </ul>
             <div class="flex flex-col sm:flex-row gap-4">
-              <a href="https://wa.me/6285180773953?text=Halo%20Cheguide,%20saya%20ingin%20tanya%20paket%20rafting." target="_blank" class="bg-cheguide-yellow text-cheguide-dark px-8 py-4 rounded-full font-semibold text-lg hover:bg-yellow-400 transition shadow-lg text-center">
+              <a href="https://wa.me/62881012531832?text=Halo%20Cheguide,%20saya%20ingin%20tanya%20paket%20rafting." target="_blank" class="bg-cheguide-yellow text-cheguide-dark px-8 py-4 rounded-full font-semibold text-lg hover:bg-yellow-400 transition shadow-lg text-center">
                 Konsultasi via WhatsApp
               </a>
               <a href="#paket" class="border-2 border-white text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-white hover:text-cheguide-green transition text-center">
@@ -74,12 +74,93 @@
         <div>
           <div class="hidden md:block"></div>
             <div class="bg-white/10 backdrop-blur-sm rounded-3xl p-4 shadow-2xl md:w-[800px]">
-              <img 
-                  src="/img/hero-photo.png" 
-                  alt="Rafting Cisadane" 
-                   class="rounded-2xl w-full h-auto"
-                />
-              </div>
+             <div id="hero-slider" class="relative overflow-hidden rounded-2xl">
+    <!-- Slide 1 - Rafting -->
+       <div class="hero-slide block">
+         <img
+           src="https://github.com/develovement/cheguide-asset/blob/f40740bfa0d98acaf7e98706122c337c86642fa2/3.png?raw=true"
+           alt="Rafting Cisadane Cheguide"
+           class="w-full h-auto object-cover"
+        />
+       <div class="absolute left-4 bottom-4 bg-black/60 text-white px-4 py-2 rounded-full text-sm md:text-base">
+        Rafting Cisadane
+       </div>
+      </div>
+
+    <!-- Slide 2 - Offroad -->
+    <div class="hero-slide hidden">
+      <img
+        src="https://github.com/develovement/cheguide-asset/blob/f40740bfa0d98acaf7e98706122c337c86642fa2/6.png?raw=true"
+        alt="Rafting Cisadane"
+        class="w-full h-auto object-cover"
+      />
+      <div class="absolute left-4 bottom-4 bg-black/60 text-white px-4 py-2 rounded-full text-sm md:text-base">
+        Rafting Cisadane
+      </div>
+    </div>
+
+    <!-- Slide 3 - Glamping -->
+    <div class="hero-slide hidden">
+      <img
+        src="https://github.com/develovement/cheguide-asset/blob/f40740bfa0d98acaf7e98706122c337c86642fa2/4.png?raw=true"
+        alt="Paintball"
+        class="w-full h-auto object-cover"
+      />
+      <div class="absolute left-4 bottom-4 bg-black/60 text-white px-4 py-2 rounded-full text-sm md:text-base">
+        Paintball
+      </div>
+    </div>
+
+    <!-- Slide 4 - Outbound -->
+    <div class="hero-slide hidden">
+      <img
+        src="https://github.com/develovement/cheguide-asset/blob/f40740bfa0d98acaf7e98706122c337c86642fa2/8.png?raw=true"
+        alt="Outbound Games"
+        class="w-full h-auto object-cover"
+      />
+      <div class="absolute left-4 bottom-4 bg-black/60 text-white px-4 py-2 rounded-full text-sm md:text-base">
+        Outbound & Fun Games
+      </div>
+    </div>
+
+    <!-- Slide 5 - Camp / Family Gathering -->
+    <div class="hero-slide hidden">
+      <img
+        src="https://via.placeholder.com/1200x700?text=Camp+%26+Gathering"
+        alt="Camp & Family Gathering"
+        class="w-full h-auto object-cover"
+      />
+      <div class="absolute left-4 bottom-4 bg-black/60 text-white px-4 py-2 rounded-full text-sm md:text-base">
+        Camp & Family Gathering
+      </div>
+    </div>
+
+    <!-- Tombol prev / next -->
+    <button
+      id="hero-prev"
+      type="button"
+      class="hidden md:flex absolute left-3 top-1/2 -translate-y-1/2 w-9 h-9 items-center justify-center rounded-full bg-black/40 text-white hover:bg-black/70 transition"
+    >
+      ‹
+    </button>
+    <button
+      id="hero-next"
+      type="button"
+      class="hidden md:flex absolute right-3 top-1/2 -translate-y-1/2 w-9 h-9 items-center justify-center rounded-full bg-black/40 text-white hover:bg-black/70 transition"
+    >
+      ›
+    </button>
+
+    <!-- Dots indikator -->
+    <div
+      id="hero-dots"
+      class="absolute bottom-3 right-4 flex gap-2 bg-black/40 px-3 py-1 rounded-full"
+    >
+      <!-- JS akan isi dots di sini -->
+    </div>
+  </div>
+</div>
+
             </div>
           </div>
         </div>
@@ -100,19 +181,19 @@
               <svg class="w-12 h-12 mx-auto mb-3" fill="currentColor" viewBox="0 0 20 20">
                 <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"></path>
               </svg>
-              <h3 class="font-semibold text-lg">Berbasis di Bogor</h3>
+              <h3 class="font-semibold text-lg">Basecamp di Bogor</h3>
             </div>
             <div class="bg-gradient-to-br from-cheguide-blue to-blue-600 text-white p-6 rounded-xl text-center shadow-lg">
               <svg class="w-12 h-12 mx-auto mb-3" fill="currentColor" viewBox="0 0 20 20">
                 <path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3zM6 8a2 2 0 11-4 0 2 2 0 014 0zM16 18v-3a5.972 5.972 0 00-.75-2.906A3.005 3.005 0 0119 15v3h-3zM4.75 12.094A5.973 5.973 0 004 15v3H1v-3a3 3 0 013.75-2.906z"></path>
               </svg>
-              <h3 class="font-semibold text-lg">Fokus Wisata Outdoor & Outing</h3>
+              <h3 class="font-semibold text-lg">Event Organizer Outing</h3>
             </div>
             <div class="bg-gradient-to-br from-cheguide-yellow to-yellow-500 text-cheguide-dark p-6 rounded-xl text-center shadow-lg">
               <svg class="w-12 h-12 mx-auto mb-3" fill="currentColor" viewBox="0 0 20 20">
                 <path d="M9 6a3 3 0 11-6 0 3 3 0 016 0zM17 6a3 3 0 11-6 0 3 3 0 016 0zM12.93 17c.046-.327.07-.66.07-1a6.97 6.97 0 00-1.5-4.33A5 5 0 0119 16v1h-6.07zM6 11a5 5 0 015 5v1H1v-1a5 5 0 015-5z"></path>
               </svg>
-              <h3 class="font-semibold text-lg">Ratusan Klien Perusahaan</h3>
+              <h3 class="font-semibold text-lg">Tim Berpengalaman</h3>
             </div>
           </div>
         </div>
@@ -136,7 +217,7 @@
               <h3 class="text-2xl font-bold text-cheguide-green">Visi</h3>
             </div>
             <p class="text-gray-700 leading-relaxed">
-              Menjadi penyedia jasa wisata outdoor dan outing perusahaan paling terpercaya di Bogor dan Jabodetabek.
+              Menjadi mitra event outing terpercaya yang memberikan pengalaman petualangan aman, profesional, dan berkesan
             </p>
           </div>
           <div class="bg-white p-8 rounded-xl shadow-lg">
@@ -153,25 +234,25 @@
                 <svg class="w-5 h-5 mr-2 mt-0.5 text-cheguide-blue flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                   <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
                 </svg>
-                Menyediakan layanan wisata outdoor dengan standar keselamatan tinggi.
+                Memberikan layanan outing yang aman, profesional, dan berkualitas.
               </li>
               <li class="flex items-start">
                 <svg class="w-5 h-5 mr-2 mt-0.5 text-cheguide-blue flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                   <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
                 </svg>
-                Menghadirkan program outing dan team building yang efektif, seru, dan berkesan.
+                Menciptakan program adventure yang seru dan berdampak positif bagi kekompakan tim.
               </li>
               <li class="flex items-start">
                 <svg class="w-5 h-5 mr-2 mt-0.5 text-cheguide-blue flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                   <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
                 </svg>
-                Memberikan pelayanan ramah, profesional, dan terencana.
+                Menjadi mitra terpercaya bagi perusahaan, sekolah, dan komunitas dalam setiap kegiatan outing.
               </li>
               <li class="flex items-start">
                 <svg class="w-5 h-5 mr-2 mt-0.5 text-cheguide-blue flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                   <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
                 </svg>
-                Mendukung pelestarian lingkungan melalui kegiatan wisata alam yang bertanggung jawab.
+                Meningkatkan kualitas layanan melalui inovasi dan pengembangan SDM.
               </li>
             </ul>
           </div>
@@ -198,7 +279,7 @@
             <p class="text-gray-600 mb-4">
               Arung jeram aman untuk pemula hingga menantang bagi pencari adrenalin. Sudah termasuk peralatan lengkap, pemandu profesional, dan briefing keselamatan.
             </p>
-            <a href="https://wa.me/6285180773953?text=Halo%20Cheguide,%20saya%20ingin%20tanya%20paket%20rafting." target="_blank" class="text-cheguide-green font-semibold hover:underline">
+            <a href="https://wa.me/62881012531832?text=Halo%20Cheguide,%20saya%20ingin%20tanya%20paket%20rafting." target="_blank" class="text-cheguide-green font-semibold hover:underline">
               Lihat Detail →
             </a>
           </div>
@@ -213,7 +294,7 @@
             <p class="text-gray-600 mb-4">
               Program team building untuk perusahaan, sekolah, dan komunitas: ice breaking, team work challenge, fun competition, hingga leadership games.
             </p>
-            <a href="https://wa.me/6285180773953?text=Halo%20Cheguide,%20saya%20ingin%20tanya%20paket%20outbound." target="_blank" class="text-cheguide-green font-semibold hover:underline">
+            <a href="https://wa.me/62881012531832?text=Halo%20Cheguide,%20saya%20ingin%20tanya%20paket%20outbound." target="_blank" class="text-cheguide-green font-semibold hover:underline">
               Lihat Detail →
             </a>
           </div>
@@ -228,7 +309,7 @@
             <p class="text-gray-600 mb-4">
               Menjelajahi jalur off-road dengan kendaraan 4x4 di area Caringin - Bogor. Cocok untuk gathering dan acara komunitas.
             </p>
-            <a href="https://wa.me/6285180773953?text=Halo%20Cheguide,%20saya%20ingin%20tanya%20paket%20off-road." target="_blank" class="text-cheguide-green font-semibold hover:underline">
+            <a href="https://wa.me/62881012531832?text=Halo%20Cheguide,%20saya%20ingin%20tanya%20paket%20off-road." target="_blank" class="text-cheguide-green font-semibold hover:underline">
               Lihat Detail →
             </a>
           </div>
@@ -243,7 +324,7 @@
             <p class="text-gray-600 mb-4">
               Paket paintball lengkap dengan peralatan, pelindung, arena, dan marshal profesional.
             </p>
-            <a href="https://wa.me/6285180773953?text=Halo%20Cheguide,%20saya%20ingin%20tanya%20paket%20paintball." target="_blank" class="text-cheguide-green font-semibold hover:underline">
+            <a href="https://wa.me/62881012531832?text=Halo%20Cheguide,%20saya%20ingin%20tanya%20paket%20paintball." target="_blank" class="text-cheguide-green font-semibold hover:underline">
               Lihat Detail →
             </a>
           </div>
@@ -258,7 +339,7 @@
             <p class="text-gray-600 mb-4">
               Rekomendasi villa & resort terbaik di Bogor untuk outing 2D1N / 3D2N, termasuk makan, api unggun (opsional), fun games, dan dokumentasi.
             </p>
-            <a href="https://wa.me/6285180773953?text=Halo%20Cheguide,%20saya%20ingin%20tanya%20paket%20menginap." target="_blank" class="text-cheguide-green font-semibold hover:underline">
+            <a href="https://wa.me/62881012531832?text=Halo%20Cheguide,%20saya%20ingin%20tanya%20paket%20menginap." target="_blank" class="text-cheguide-green font-semibold hover:underline">
               Lihat Detail →
             </a>
           </div>
@@ -273,7 +354,7 @@
             <p class="text-gray-600 mb-4">
               Menangani konsep acara: company gathering, family day, ulang tahun komunitas, hingga custom event.
             </p>
-            <a href="https://wa.me/6285180773953?text=Halo%20Cheguide,%20saya%20ingin%20tanya%20jasa%20EO." target="_blank" class="text-cheguide-green font-semibold hover:underline">
+            <a href="https://wa.me/62881012531832?text=Halo%20Cheguide,%20saya%20ingin%20tanya%20jasa%20EO." target="_blank" class="text-cheguide-green font-semibold hover:underline">
               Lihat Detail →
             </a>
           </div>
@@ -325,7 +406,7 @@
                   </li>
                 </ul>
               </div>
-              <a href="https://wa.me/6285180773953?text=Halo%20Cheguide,%20saya%20ingin%20tanya%20detail%20Paket%20Rafting%20Standard." target="_blank" class="block w-full bg-cheguide-green text-white text-center py-3 rounded-lg font-semibold hover:bg-green-600 transition">
+              <a href="https://wa.me/62881012531832?text=Halo%20Cheguide,%20saya%20ingin%20tanya%20detail%20Paket%20Rafting%20Standard." target="_blank" class="block w-full bg-cheguide-green text-white text-center py-3 rounded-lg font-semibold hover:bg-green-600 transition">
                 Tanya Detail
               </a>
             </div>
@@ -369,7 +450,7 @@
                   </li>
                 </ul>
               </div>
-              <a href="https://wa.me/6285180773953?text=Halo%20Cheguide,%20saya%20ingin%20booking%20Paket%20Rafting%20Premium." target="_blank" class="block w-full bg-cheguide-yellow text-cheguide-dark text-center py-3 rounded-lg font-semibold hover:bg-yellow-400 transition">
+              <a href="https://wa.me/62881012531832?text=Halo%20Cheguide,%20saya%20ingin%20booking%20Paket%20Rafting%20Premium." target="_blank" class="block w-full bg-cheguide-yellow text-cheguide-dark text-center py-3 rounded-lg font-semibold hover:bg-yellow-400 transition">
                 Booking Paket Premium
               </a>
             </div>
@@ -410,7 +491,7 @@
                   </li>
                 </ul>
               </div>
-              <a href="https://wa.me/6285180773953?text=Halo%20Cheguide,%20saya%20ingin%20konsultasi%20Paket%20Outing%20Corporate%202D1N." target="_blank" class="block w-full bg-orange-600 text-white text-center py-3 rounded-lg font-semibold hover:bg-orange-700 transition">
+              <a href="https://wa.me/62881012531832?text=Halo%20Cheguide,%20saya%20ingin%20konsultasi%20Paket%20Outing%20Corporate%202D1N." target="_blank" class="block w-full bg-orange-600 text-white text-center py-3 rounded-lg font-semibold hover:bg-orange-700 transition">
                 Konsultasi Program
               </a>
             </div>
@@ -811,7 +892,7 @@
             </div>
 
             <div class="flex flex-col sm:flex-row gap-4">
-              <a href="https://wa.me/6285180773953?text=Halo%20Cheguide,%20saya%20ingin%20tanya%20paket%20rafting." target="_blank" class="flex-1 bg-cheguide-green text-white text-center py-4 rounded-lg font-semibold hover:bg-green-600 transition shadow-lg">
+              <a href="https://wa.me/62881012531832?text=Halo%20Cheguide,%20saya%20ingin%20tanya%20paket%20rafting." target="_blank" class="flex-1 bg-cheguide-green text-white text-center py-4 rounded-lg font-semibold hover:bg-green-600 transition shadow-lg">
                 Buka WhatsApp
               </a>
               <a href="https://maps.app.goo.gl/hNM3fLnmMNVSbuhg9?g_st=awb" target="_blank" class="flex-1 bg-cheguide-blue text-white text-center py-4 rounded-lg font-semibold hover:bg-blue-700 transition shadow-lg">
@@ -843,7 +924,7 @@
         <p class="text-xl text-white/90 mb-8">
           Hubungi kami sekarang untuk konsultasi dan penawaran terbaik
         </p>
-        <a href="https://wa.me/6285180773953?text=Halo%20Cheguide,%20saya%20ingin%20tanya%20paket%20rafting." target="_blank" class="inline-block bg-cheguide-yellow text-cheguide-dark px-10 py-4 rounded-full font-bold text-lg hover:bg-yellow-400 transition shadow-2xl">
+        <a href="https://wa.me/62881012531832?text=Halo%20Cheguide,%20saya%20ingin%20tanya%20paket%20rafting." target="_blank" class="inline-block bg-cheguide-yellow text-cheguide-dark px-10 py-4 rounded-full font-bold text-lg hover:bg-yellow-400 transition shadow-2xl">
           Chat via WhatsApp Sekarang
         </a>
       </div>
