@@ -158,3 +158,25 @@ document.addEventListener("DOMContentLoaded", function () {
   showSlide(0);
   startAutoPlay();
 });
+
+const heroSlider = document.getElementById('hero-slider');
+let touchStartX = 0;
+let touchEndX = 0;
+const SWIPE_THRESHOLD = 50;
+
+heroSlider.addEventListener('touchstart', e => {
+  touchStartX = e.changedTouches[0].clientX;
+});
+
+heroSlider.addEventListener('touchend', e => {
+  touchEndX = e.changedTouches[0].clientX;
+  handleHeroSwipe();
+});
+
+function handleHeroSwipe() {
+  const diff = touchEndX - touchStartX;
+  if (Math.abs(diff) < SWIPE_THRESHOLD) return;
+
+  if (diff < 0) showNextHeroSlide();
+  else showPrevHeroSlide();
+}
